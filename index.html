@@ -209,6 +209,20 @@
 <footer>
   Agrofix AI | Prototype for 25% Review – Tamil Nadu Focus
 </footer>
+<section id="voice">
+  <h2>Voice Guidance</h2>
+  <p>Click the button to hear farming guidance.</p>
+  <button onclick="speak()">🔊 Voice Guidance</button>
+</section>
+
+<script>
+function speak() {
+  const msg = new SpeechSynthesisUtterance(
+    "Welcome to AgroFix AI. This system helps farmers with crop advice, weather alerts, and smart farming guidance."
+  );
+  speechSynthesis.speak(msg);
+}
+</script>
 
 </body>
 </html>
