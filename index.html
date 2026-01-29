@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agrofix AI | Smart Farming Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f9f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #2e7d32, #388e3c);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    nav {
+      background: #e8f5e9;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 45px 20px;
+    }
+
+    .title {
+      text-align: center;
+      color: #1b5e20;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card i {
+      font-size: 40px;
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    .box {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    }
+
+    .alert {
+      background: #ffebee;
+      border-left: 6px solid #d32f2f;
+    }
+
+    .savings {
+      background: #e3f2fd;
+      border-left: 6px solid #1976d2;
+    }
+
+    footer {
+      background: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1><i class="fa-solid fa-seedling"></i> Agrofix AI</h1>
+  <p>AI Decision Support for Tamil Nadu Farmers</p>
+</header>
+
+<nav>
+  <a href="#overview">Overview</a>
+  <a href="#features">Core Features</a>
+  <a href="#regional">Regional Support</a>
+  <a href="#alert">Risk Alert</a>
+  <a href="#offline">Offline Mode</a>
+</nav>
+
+<!-- OVERVIEW -->
+<section id="overview">
+  <h2 class="title">Project Overview</h2>
+  <div class="box">
+    Agrofix AI is a farmer-centric decision-support system designed to prevent crop
+    losses by warning farmers about wrong actions, tracking outcomes, and showing
+    cost savings. The system is optimized for **Tamil Nadu rural farming conditions**.
+  </div>
+</section>
+
+<!-- CORE FEATURES -->
+<section id="features">
+  <h2 class="title">Unique Core Features</h2>
+
+  <div class="cards">
+    <div class="card">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <h3>Do-Not-Do Risk Alerts</h3>
+      <p>Warns farmers against risky actions like spraying before rainfall.</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-rotate"></i>
+      <h3>Decision Outcome Tracking</h3>
+      <p>Farmer feedback is used to improve future recommendations.</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-indian-rupee-sign"></i>
+      <h3>Cost & Savings Analysis</h3>
+      <p>Shows money saved by avoiding unnecessary inputs.</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-people-group"></i>
+      <h3>Small Farmer Focus</h3>
+      <p>Designed for marginal farmers with low budgets.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REGIONAL FEATURES -->
+<section id="regional">
+  <h2 class="title">Tamil Nadu Regional Support</h2>
+
+  <div class="cards">
+    <div class="card">
+      <i class="fa-solid fa-language"></i>
+      <h3>Tamil Language Support</h3>
+      <p>Interface and alerts available in Tamil for easy understanding.</p>
+      <p><strong>Example:</strong> “இன்று பூச்சிக்கொல்லி தெளிக்க வேண்டாம்”</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-cloud-sun-rain"></i>
+      <h3>District-Based Weather</h3>
+      <p>Weather alerts customized for Tamil Nadu districts.</p>
+      <p><strong>Example:</strong> Rain alert for Thanjavur region.</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-shop"></i>
+      <h3>Low-Cost Pesticide Locator</h3>
+      <p>Shows nearby locations where pesticides are cheaper.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RISK ALERT -->
+<section id="alert">
+  <h2 class="title">Today’s Risk Alert</h2>
+  <div class="box alert">
+    <h3><i class="fa-solid fa-ban"></i> Do NOT Spray Pesticide Today</h3>
+    <p><strong>Reason:</strong> Rain expected in your district</p>
+    <p><strong>Loss avoided:</strong> ₹2,500 per acre</p>
+  </div>
+</section>
+
+<!-- OFFLINE MODE -->
+<section id="offline">
+  <h2 class="title">Offline & Low-Signal Mode</h2>
+  <div class="box savings">
+    <p>
+      Agrofix AI supports **offline usage for rural areas**. The system automatically
+      syncs weather updates, alerts, and recommendations **whenever network signal
+      is available**, instead of waiting for continuous internet connectivity.
+    </p>
+    <p>
+      This ensures uninterrupted access for farmers in remote villages.
+    </p>
+  </div>
+</section>
+
+<footer>
+  Agrofix AI | Prototype for 25% Review – Tamil Nadu Focus
+</footer>
+
+</body>
+</html>
